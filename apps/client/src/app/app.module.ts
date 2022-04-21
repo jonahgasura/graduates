@@ -34,7 +34,7 @@ import {InMemoryCache} from '@apollo/client/core';
         return {
           cache: new InMemoryCache(),
           link: httpLink.create({
-            uri: 'https://301graduates.live:3333/graphql',
+            uri: 'http://localhost:3333/graphql',
           }),
         };
       },
