@@ -15,20 +15,30 @@ export enum FirebaseFolders{
 
 @Injectable()
 export class FirebaseService {
+
   firebaseConfig = {
-
-    apiKey: process.env.API_KEY,
-
-    projectId: process.env.PROJECT_ID,
-
-    storageBucket: process.env.STORAGE_BUCKET,
-
-    messagingSenderId: process.env.MSG_SENDER_ID,
-
-    appId: process.env.APP_ID,
-
-    measurementId: process.env.MEASUREMENT_ID,
+    apiKey: "AIzaSyCJDoT3fRnol23upGcl4O2q90Hsmq0aQ-s",
+    authDomain: "cos301-storage-test.firebaseapp.com",
+    projectId: "cos301-storage-test",
+    storageBucket: "cos301-storage-test.appspot.com",
+    messagingSenderId: "994861102315",
+    appId: "1:994861102315:web:6a4b736d15abc7915cbaae"
+    //measurementId: "MEASUREMENT_ID",
   };
+  // firebaseConfig = {
+
+  //   apiKey: process.env.API_KEY,
+
+  //   projectId: process.env.PROJECT_ID,
+
+  //   storageBucket: process.env.STORAGE_BUCKET,
+
+  //   messagingSenderId: process.env.MSG_SENDER_ID,
+
+  //   appId: process.env.APP_ID,
+
+  //   measurementId: process.env.MEASUREMENT_ID,
+  // };
 
   app = initializeApp(this.firebaseConfig);
   //analytics = getAnalytics(this.app);
